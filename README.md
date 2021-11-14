@@ -26,6 +26,7 @@ List of Classes and Explaination:
 ## Detailed UML Class diagrams
 
 ### Class 1: Inventory 
+<img width="273" alt="Inventory_UML_Corbin_Rochelle" src="https://user-images.githubusercontent.com/94238706/141689458-47c3fe7e-205b-4fd7-bd4a-a5ddfafe3df6.png">
 ---
 ### Class 2:
 ---
