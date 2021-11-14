@@ -13,7 +13,7 @@ Group Member Names/netIDs:
 - - rjm470
 - Connor Moody
 - - mcm1053
-- - Corbin Rochelle 
+- Corbin Rochelle 
 - - ctr233
 
 List of Classes and Explaination: 
@@ -27,13 +27,17 @@ List of Classes and Explaination:
 
 ### Class 1: Inventory 
 <img width="273" alt="Inventory_UML_Corbin_Rochelle" src="https://user-images.githubusercontent.com/94238706/141689458-47c3fe7e-205b-4fd7-bd4a-a5ddfafe3df6.png">
+
 ---
 ### Class 2:
+
 ---
 ### Class 3:
 ---
+
 ### Class 4:
 ---
+
 ### Class 5:
 
 
