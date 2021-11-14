@@ -1,5 +1,5 @@
 # Design-Document
-Part 1 of the project
+Part 1 of the Final Project in Methods and Tools.
 
 ## Group Information
 Group Number 27
