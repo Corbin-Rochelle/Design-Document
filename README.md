@@ -63,16 +63,21 @@ All of these functions, except the constructor, are either getters or setters be
 The menuing will be split into three sections: before login, after login but before checkout, and after login during checkout. 
 
 ### Before Login [1]
-- Login
+- Login (moves to [2])
 - Create Account
-- Forgot Account
 - Exit Store
 
-### After Login But Before Checkout [2]
-- Checkout
-- Logout (moves back to Before Login Menu)
+### Login [2]
+- Username Entry
+- Password Entry
+- Forgot Username/Password
+- Enter (if pass, moves to [3], if fail moves to [1])
 
-### After Login, During Checkout [3]
+### After Login But Before Checkout [3]
+- Checkout (moves to [3])
+- Logout (moves to [1])
+
+### After Login, During Checkout [4]
 
 The menu covers all known requirements at the present moment; although, it will have to be edited in the future more than likely to account for some present unforseen reason(s). 
 
