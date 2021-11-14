@@ -16,9 +16,16 @@ Group Member Names/netIDs:
 - - Corbin Rochelle 
 - - ctr233
 
-## 5 Classes with UML Class diagrams
+List of Classes and Explaination: 
+1. Inventory: This is the most simple, yet, neccessary class for an e-commerce store. For our store to function as a store we need to keep track of what we have and some information about each item. 
+2.
+3.
+4.
+5.
 
-### Class 1: 
+## Detailed UML Class diagrams
+
+### Class 1: Inventory 
 ### Class 2:
 ### Class 3:
 ### Class 4:
