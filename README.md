@@ -6,17 +6,15 @@ Group Number 27
 
 Group Member Names/netIDs:
 - David Burk
-
-- dab724
+  - dab724
 - Brandon Lynchard
-
-- bsl159
+  - bsl159
 - Raysita Maharani
-- - rjm470
+  - rjm470
 - Connor Moody
-- - mcm1053
+  - mcm1053
 - Corbin Rochelle 
-- - ctr233
+  - ctr233
 
 List of Classes and Explaination: 
 1. Inventory: This is the most simple, yet, neccessary class for an e-commerce store. For our store to function as a store we need to keep track of what we have and some information about each item. 
