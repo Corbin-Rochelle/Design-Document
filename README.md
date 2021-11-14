@@ -27,6 +27,7 @@ List of Classes and Explaination:
 
 ### Class 1: Inventory 
 <img width="273" alt="Inventory_UML_Corbin_Rochelle" src="https://user-images.githubusercontent.com/94238706/141689458-47c3fe7e-205b-4fd7-bd4a-a5ddfafe3df6.png">
+
 - Inventory(): This is the constrcutor function, which sets up a new item of inventory. 
 - getName(): This is a getter for the Name of the item.
 - getClassification(): This is a getter for the Classification of the item.
