@@ -74,10 +74,24 @@ The menuing will be split into three sections: before login, after login but bef
 - Enter (if pass, moves to [3], if fail moves to [1])
 
 ### After Login But Before Checkout [3]
+- Search for Item Name
+- Search for Item Type
+- Add to Cart
+  - Prompts to enter which Item Number and How Many
+- View Cart
+  - Remove Item
+  - Back to Shopping
 - Checkout (moves to [3])
 - Logout (moves to [1])
 
 ### After Login, During Checkout [4]
+- Billing Information
+- Shipping Address
+- Billing Address
+- Shipping Options
+  - Overnight, Standard, etc.
+- Finalize
+- Go Back (moves to [3])
 
 The menu covers all known requirements at the present moment; although, it will have to be edited in the future more than likely to account for some present unforseen reason(s). 
 
