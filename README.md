@@ -26,9 +26,13 @@ List of Classes and Explaination:
 ## Detailed UML Class diagrams
 
 ### Class 1: Inventory 
+---
 ### Class 2:
+---
 ### Class 3:
+---
 ### Class 4:
+---
 ### Class 5:
 
 
