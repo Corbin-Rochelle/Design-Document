@@ -6,9 +6,11 @@ Group Number 27
 
 Group Member Names/netIDs:
 - David Burk
-- - dab724
+
+- dab724
 - Brandon Lynchard
-- - bsl159
+
+- bsl159
 - Raysita Maharani
 - - rjm470
 - Connor Moody
@@ -60,7 +62,16 @@ All of these functions, except the constructor, are either getters or setters be
 
 
 ## Menuing 
+The menuing will be split into three sections: before login, after login but before checkout, and after login during checkout. 
 
+### Before Login
+- 
+
+### After Login But Before Checkout
+
+### After Login, During Checkout
+
+The menu covers all known requirements at the present moment; although, it will have to be edited in the future more than likely to account for some present unforseen reason(s). 
 
 ## Storing Data
 This group has decided by a vote that we are going to use a database. The database we are going to use is mySQL (tentative). 
