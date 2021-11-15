@@ -62,12 +62,31 @@ All of these functions, except the constructor, are either getters or setters be
 - setPassword(): This sets the users password for the email.
 - setAddress(): This sets the users address.
 
-All of these functions, except the constructor, are either getters or setters because the itme class is not going to be manipulating anything itself. 
+All of these functions, except the constructor, are either getters or setters because the item class is not going to be manipulating anything itself. 
 
 ---
-### Class 3:
----
+### Class 3: Order
+<img width="273" alt="Order_UML_Raysita_Maharani" src="https://user-images.githubusercontent.com/85123454/141834919-1d3a3e64-8b60-47a8-ae9d-03ed9aae12a2.PNG">
 
+- Order(): This is the constructor function, which takes the users order.
+- getFirstName(): This gets the users first name.
+- getLastName(): This gets the users last name.
+- getEmail(): This gets the users email address.
+- getContact(): This gets the users phone number.
+- getReceivingAddress(): This gets the users delivery address.
+- getBillingAddress(): This gets the users billing address.
+- getPaymentMethod(): This gets the users payment method.
+- setFirstName(): This sets the users first name.
+- setLastname(): This sets the users last name.
+- setEmail(): This sets the users email address.
+- setContact(): This sets the users phone number.
+- setReceivingAddress(): This sets the users delivery address.
+- setBillingAddress(): This sets the users billing address.
+- setPaymentMethod(): This sets the users payment method.
+
+All of these functions, except the constructor, are either getters or setters because the item class is not going to be manipulating anything itself. 
+
+---
 ### Class 4:
 ---
 
