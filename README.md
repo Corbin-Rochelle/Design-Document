@@ -44,7 +44,7 @@ List of Classes and Explaination:
 - setStars(): This is a setter for the Stars of the item. 
 - setReviews(): This is a setter for the Reviews of the item.
 
-All of these functions, except the constructor, are either getters or setters because the itme class is not going to be manipulating anything itself. 
+All of these functions, except the constructor, are either getters or setters because the item class is not going to be manipulating anything itself. 
 
 ---
 ### Class 2: User
