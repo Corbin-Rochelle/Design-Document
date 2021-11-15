@@ -18,7 +18,7 @@ Group Member Names/netIDs:
 
 List of Classes and Explaination: 
 1. Inventory: This is the most simple, yet, neccessary class for an e-commerce store. For our store to function as a store we need to keep track of what we have and some information about each item. 
-2.
+2. User: This class will allow user accounts to be created and to view the information associated with them.
 3.
 4.
 5.
