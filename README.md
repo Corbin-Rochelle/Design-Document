@@ -47,8 +47,22 @@ List of Classes and Explaination:
 All of these functions, except the constructor, are either getters or setters because the itme class is not going to be manipulating anything itself. 
 
 ---
-### Class 2:
+### Class 2: User
+<img width="273" alt="Users_UML_Connor_Moody" src="https://user-images.githubusercontent.com/89549880/141785135-35fc24cb-ff48-4c0e-b2f2-4749dd00d63c.png">
 
+- User(): This is the constructor for the user class.
+- getFirstName(): This gets the users first name.
+- getLastName(): This gets the users last name.
+- getEmail(): This gets the users email address.
+- getPassword(): This gets the users password for their email to login.
+- getAddress(): This gets the users address to know where to ship to.
+- setFirstName(): This sets the users first name.
+- setLastName(): This sets the users last name.
+- setEmail(): This sets the users email.
+- setPassword(): This sets the users password for the email.
+- setAddress(): This sets the users address.
+
+All of these functions, except the constructor, are either getters or setters because the itme class is not going to be manipulating anything itself. 
 ---
 ### Class 3:
 ---
