@@ -63,6 +63,7 @@ All of these functions, except the constructor, are either getters or setters be
 - setAddress(): This sets the users address.
 
 All of these functions, except the constructor, are either getters or setters because the itme class is not going to be manipulating anything itself. 
+
 ---
 ### Class 3:
 ---
