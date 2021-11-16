@@ -105,6 +105,23 @@ All of these functions, except the constructor, are either getters or setters be
 
 ---
 ### Class 5: Admin
+[Admin Class.pdf](https://github.com/Corbin-Rochelle/Design-Document/files/7543516/Admin.Class.pdf)
+
++Admin()  This is the class constructor for Admin class
++getUsername()  gets the username
++getFirstName()  gets the admins first name 
++getLastName()  gets the admins last name
++getEmail()  gets the admins email
++getPassword()  gets the admins passowrd
++getAddress()  gets the admins address
++getUser(FirstName,LastName,Address,Email)  pulls the first name, last name, email, and address for a user from the user class
++editInventory()  allows the admin to edit the inventory class
++setUsername()  sets the admins username
++setFirstName()  sets the admins first name
++setLastName()  sets the admins last name
++setEmail()  sets the admins email
++setPassword()  sets the admins password
++setAddress()  sets the admins address
 
 
 
