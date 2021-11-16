@@ -87,8 +87,10 @@ All of these functions, except the constructor, are either getters or setters be
 All of these functions, except the constructor, are either getters or setters because the item class is not going to be manipulating anything itself. 
 
 ---
-### Class 4:
+### Class 4: Shopping Cart
 ---
+![ShoppingCartUML](https://user-images.githubusercontent.com/58010076/141879194-0eb9b32e-1f0b-4d8d-a207-415974f7479c.PNG)
+
 
 ### Class 5:
 
