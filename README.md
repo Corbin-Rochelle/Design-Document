@@ -115,6 +115,9 @@ The menuing will be split into three sections: before login, after login but bef
 - View Cart
   - Remove Item
   - Back to Shopping
+- Return and Item
+  - Which Item?
+  - Back to Shopping
 - Checkout (moves to [3])
 - Logout (moves to [1])
 
