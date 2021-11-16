@@ -105,7 +105,7 @@ All of these functions, except the constructor, are either getters or setters be
 
 ---
 ### Class 5: Admin
-[Admin Class.pdf](https://github.com/Corbin-Rochelle/Design-Document/files/7543516/Admin.Class.pdf)
+<img width="273" alt="Admin_UML" src="https://user-images.githubusercontent.com/85123454/141925113-5909acdd-93b3-4a1f-9617-ea77f16fd2a2.JPG">
 
 +Admin()  This is the class constructor for Admin class
 +getUsername()  gets the username
