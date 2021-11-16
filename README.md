@@ -104,7 +104,9 @@ All of these functions, except the constructor, are either getters or setters be
 - getNumItems(): Gets the total number of items in the shopping cart.
 
 ---
-### Class 5:
+### Class 5: Admin
+
+
 
 
 ## Menuing 
