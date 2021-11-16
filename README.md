@@ -89,8 +89,19 @@ All of these functions, except the constructor, are either getters or setters be
 ---
 ### Class 4: Shopping Cart
 ---
-![ShoppingCartUML](https://user-images.githubusercontent.com/58010076/141879194-0eb9b32e-1f0b-4d8d-a207-415974f7479c.PNG)
+![ShoppingCartUML](https://user-images.githubusercontent.com/58010076/141879885-4e7d3896-d7c3-4067-be6a-493f3272f4da.PNG)
 
+- ShoppingCart(): This is the constructor functiom, it requires a user to initialize.
+- displayCart(): Displays the contents of the the users shopping cart.
+- checkoutCart(): Does everything necessary to checkout a users shopping cart.
+- addToCart(): Adds an item to the cart.
+- removeFromCart(): Removes an item from the cart.
+- setUser(): Sets the owner/user of the shopping cart.
+- getUser(): Gets the owner/user of the shopping cart.
+- setTotal(): Sets the total price of the shopping cart.
+- getTotal(): Gets the total price of the shopping cart.
+- setNumItems(): Sets the total number of items in the shopping cart.
+- getNumItems(): Gets the total number of items in the shopping cart.
 
 ### Class 5:
 
