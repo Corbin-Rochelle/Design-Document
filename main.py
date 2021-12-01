@@ -9,68 +9,68 @@ class Movies:
 
     # Getters FORMAT ALL OF THESE
     def get_title(self):
-        query = "SELECT name FROM inventory WHERE name=%s"
-        data = (self.name, )
+        query = "SELECT title FROM Movies WHERE name=%s"
+        data = (self.title, )
         cursor.execute(query,data)
         return str(cursor)
 
     def get_stock(self):
-        query = "SELECT stock FROM inventory WHERE name=%s"
-        data = (self.name,)
+        query = "SELECT stock FROM Movies WHERE name=%s"
+        data = (self.stock,)
         cursor.execute(query, data)
         return int(cursor)
 
     def get_price(self):
-        query = "SELECT price FROM inventory WHERE name=%s"
-        data = (self.name,)
+        query = "SELECT price FROM Movies WHERE name=%s"
+        data = (self.price,)
         cursor.execute(query, data)
         return float(cursor)
 
     def get_shipping_price(self):
-        query = "SELECT shipping_info FROM inventory WHERE name=%s"
-        data = (self.name,)
+        query = "SELECT shipping_price FROM Movies WHERE name=%s"
+        data = (self.shipping_price,)
         cursor.execute(query, data)
         return str(cursor)
 
     def get_reviews(self):
-        query = "SELECT reviews FROM inventory WHERE name=%s"
-        data = (self.name,)
+        query = "SELECT reviews FROM Movies WHERE name=%s"
+        data = (self.reviews,)
         cursor.execute(query, data)
         return int(cursor)
     
     def get_producer(self):
-        query = "SELECT producer FROM inventory WHERE name=%s"
-        data = (self.name,)
+        query = "SELECT producer FROM Movie WHERE name=%s"
+        data = (self.producer,)
         cursor.execute(query, data)
         return str(cursor)
 
      # Setters
     def set_stock(self, stock):
-        query = "UPDATE inventory SET stock=%s  WHERE name=%s"
-        data = (stock, self.name,)
+        query = "UPDATE Movies SET stock=%s  WHERE name=%s"
+        data = (stock, self.stock,)
         cursor.execute(query, data)
         connection.commit()
 
     def  set_price(self, price):
-        query = "UPDATE inventory SET price=%s  WHERE name=%s"
-        data = (price, self.name,)
+        query = "UPDATE Movies SET price=%s  WHERE name=%s"
+        data = (price, self.price,)
         cursor.execute(query, data)
         connection.commit()
 
-    def set_shipping_info(self, shipping_info):
-        query = "UPDATE inventory SET shipping_info=%s  WHERE name=%s"
-        data = (shipping_info, self.name,)
+    def set_shipping_price(self, shipping_price):
+        query = "UPDATE Movies SET shipping_price=%s  WHERE name=%s"
+        data = (shipping_info, self.shipping_price,)
         cursor.execute(query, data)
         connection.commit()
 
     def set_producer(self, producer):
-        query = "UPDATE inventory SET producer=%s  WHERE name=%s"
-        data = (producer, self.name,)
+        query = "UPDATE Movies SET producer=%s  WHERE name=%s"
+        data = (producer, self.producer,)
         cursor.execute(query, data)
         connection.commit()
 
     def set_reviews(self, reviews):
-        query = "UPDATE inventory SET reviews=%s  WHERE name=%s"
-        data = (reviews, self.name,)
+        query = "UPDATE Movies SET reviews=%s  WHERE name=%s"
+        data = (reviews, self.reviews,)
         cursor.execute(query, data)
         connection.commit()
