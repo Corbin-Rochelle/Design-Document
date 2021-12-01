@@ -1,3 +1,6 @@
+import mysql.connector
+import sys
+
 def menu():
     print("""1) Search for Item\n
     2) Search for Item Type\n
