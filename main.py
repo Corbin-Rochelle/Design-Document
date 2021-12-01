@@ -39,7 +39,7 @@ class Movies:
         return int(cursor)
     
     def get_producer(self):
-        query = "SELECT producer FROM Movie WHERE name=%s"
+        query = "SELECT producer FROM Movies WHERE name=%s"
         data = (self.producer,)
         cursor.execute(query, data)
         return str(cursor)
