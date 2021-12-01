@@ -1,6 +1,8 @@
 import mysql.connector
 import sys
 
+import order.py
+
 def menu():
     print("""1) Search for Item\n
     2) Search for Item Type\n
