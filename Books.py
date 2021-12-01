@@ -1,7 +1,3 @@
-import mysql.connector
-import sys
-
-
 class Books:
 
     def __init__(self):
