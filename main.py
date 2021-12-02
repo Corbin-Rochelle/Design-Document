@@ -1,5 +1,4 @@
-# Information
-    # I need to be able to update the databse from inside the shopping cart class
+
 
 class ShoppingCart:
     def __init__(self, user):
@@ -63,9 +62,10 @@ class ShoppingCart:
             temp_str = temp_str + item + ","
         self.items = temp_str.rstrip(",")
 
-        # Update the csv for this user in the database
+        # Query the database for the price of the item, then subtract it from total
         pass
-        self.total -= item.get_price()
+        price = 0
+        self.total -= price
 
         # Push items into the database
         pass
