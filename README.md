@@ -65,18 +65,14 @@ All of these functions, except the constructor, are either getters or setters be
 
 ---
 ### Class 3: Order
-<img width="273" alt="Order_UML_Raysita_Maharani" src="https://user-images.githubusercontent.com/85123454/141834919-1d3a3e64-8b60-47a8-ae9d-03ed9aae12a2.PNG">
+<img width="273" alt="Order_UML_Raysita_Maharani" src="https://user-images.githubusercontent.com/85123454/144342008-9955ef4b-1c76-4411-b394-f6b04351c138.PNG">
 
 - Order(): This is the constructor function, which takes the users order.
-- getFirstName(): This gets the users first name.
-- getLastName(): This gets the users last name.
 - getEmail(): This gets the users email address.
 - getContact(): This gets the users phone number.
 - getReceivingAddress(): This gets the users delivery address.
 - getBillingAddress(): This gets the users billing address.
 - getPaymentMethod(): This gets the users payment method.
-- setFirstName(): This sets the users first name.
-- setLastname(): This sets the users last name.
 - setEmail(): This sets the users email address.
 - setContact(): This sets the users phone number.
 - setReceivingAddress(): This sets the users delivery address.
