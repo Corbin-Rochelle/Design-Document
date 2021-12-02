@@ -1,7 +1,7 @@
 import mysql.connector
 import sys
 
-# import order.py
+import order.py
 
 # Connecting to the Database main
 try:
@@ -80,7 +80,7 @@ def Screen_Two():
     print("Success!, logging you in.")
     print()
     Screen_Three()
-    # return
+    return
     # If username/password fails
     # print("Failure: Returning to title screen.")
     # return
