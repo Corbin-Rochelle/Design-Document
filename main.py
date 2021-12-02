@@ -93,7 +93,7 @@ def Screen_Two():
 
 def Screen_Three(user_name):
     
-    my_user = User(user_name)
+    shopping_cart = ShoppingCart(user_name)
     # Requires a branch, no need to create new function
     print("(1): View all items in movies or books")
 
