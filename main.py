@@ -140,10 +140,11 @@ def Screen_Three(user_name):
                 print(x[0])
         
         elif user_input == "3":
-            pass
+            item_name = str(input("Enter the name of the item: "))
+            shopping_cart.addToCart(item_name)
                             
         elif user_input == "4":
-            pass
+            
                             
         elif user_input == "5":
             pass
