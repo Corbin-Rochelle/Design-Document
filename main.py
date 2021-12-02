@@ -3,7 +3,7 @@ import sys
 
 import order.py
 
-def menu():
+def main_menu():
     print("""1) Search for Item\n
     2) Search for Item Type\n
     3) Add to Cart\n
@@ -65,7 +65,7 @@ def logout():
     print("NOT DONE")
 
 
-# Calling main
+# Connecting to the Database main
 try:
     connection = mysql.connector.connect(
         host="localhost",
@@ -84,4 +84,6 @@ except:
 
 cursor = connection.cursor()
 
-menu()
+# Calling the menuing
+
+main_menu()
