@@ -142,12 +142,16 @@ def Screen_Three(user_name):
         elif user_input == "3":
             item_name = str(input("Enter the name of the item: "))
             shopping_cart.addToCart(item_name)
+            print("Item added!)
                             
         elif user_input == "4":
-            
-                            
+            item_name = str(input("Enter the name of the item: "))
+            shopping_cart.removeFromCart(item_name)
+            print("Item removed!")
+                  
         elif user_input == "5":
-            pass
+            shopping_cart.checkoutCart
+            print("Checked out!)
                             
          elif user_input == "6":
             print("Your order history: ")
