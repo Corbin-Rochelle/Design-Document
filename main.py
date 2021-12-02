@@ -83,7 +83,7 @@ def Screen_Two():
     if password == result[0][0]:
         print("Success!, logging you in.")
         print()
-        Screen_Three()
+        Screen_Three(user_name)
         return
     # If username/password fails
     else:
@@ -91,7 +91,9 @@ def Screen_Two():
         return
 
 
-def Screen_Three():
+def Screen_Three(user_name):
+    
+    my_user = User(user_name)
     # Requires a branch, no need to create new function
     print("(1): View all items in movies or books")
 
