@@ -67,9 +67,34 @@ def Screen_One():
         elif user_input == "C":
             print("Goodbye!")
             exit()
+
+
+        # Screen Three
+        elif user_input == "1":
+            answer = str(input("Do you want to see 1) movies or 2) books?"))
+            if answer == "1":
+                cursor.execute("SELECT title FROM movies")
+                result = cursor.fetchall()
+                for x in result:
+                    print(x[0])
+            elif answer == "2":
+                cursor.execute("SELECT title FROM books")
+                result = cursor.fetchall()
+                for x in result:
+                    print(x[0])
+            else:
+                pass
+
+        elif user_input == "2":
+            user_name = str(input("What is your user name? "))
+            query = "SELECT csv FROM shopping_cart WHERE name = %s"
+            data = (user_name,)
+            cursor.execute(query, data)
+            result = cursor.fetchall()
+            for x in result:
+                print(x[0])
             
-        
-        # logout
+
         elif user_input == "10":
             print("Logout Successfull")
             Main_Menu()
@@ -101,7 +126,7 @@ def Screen_Three():
     print("Enter an integer:")
     print()
     # Requires a branch, no need to create new function
-    print("(1): View all items in a specific category")
+    print("(1): View all items in movies or books")
 
     print("(2): View all items in your shopping cart")
 
