@@ -1,7 +1,11 @@
+from books import *
+from movies import *
+from order import *
+from user import *
+from shopping_cart import *
+
 import mysql.connector
 import sys
-
-import order.py
 
 # Connecting to the Database main
 try:
@@ -47,7 +51,7 @@ def Screen_One():
                 user_name = str(input("Enter username: "))
                 password = str(input("Enter password: "))
                 confirm_password = str(input('Confirm Password : '))
-                if password!=confirm_password: 
+                if password!=confirm_password:
                     print()
                     print('Password does not match! Try Again')
                     print()
@@ -63,7 +67,8 @@ def Screen_One():
         elif user_input == "C":
             print("Goodbye!")
             exit()
-
+            
+        
         # logout
         elif user_input == "10":
             print("Logout Successfull")
@@ -76,14 +81,20 @@ def Screen_Two():
     user_name = str(input("Enter username: "))
     password = str(input("Enter password: "))
     print()
-    # If username/password passes
-    print("Success!, logging you in.")
-    print()
-    Screen_Three()
-    return
+    # Checking password
+    query = "SELECT password FROM users WHERE first_name=%s"
+    data = (user_name,)
+    cursor.execute(query, data)
+    result = cursor.fetchall()
+    if password == result[0][0]:
+        print("Success!, logging you in.")
+        print()
+        Screen_Three()
+        return
     # If username/password fails
-    # print("Failure: Returning to title screen.")
-    # return
+    else:
+        print("Failure: Returning to title screen.")
+        return
 
 
 def Screen_Three():
