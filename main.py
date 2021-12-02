@@ -146,8 +146,12 @@ def Screen_Three():
         elif user_input == "5":
             pass
                             
-        elif user_input == "6":
-            pass
+         elif user_input == "6":
+            print("Your order history: ")
+            cursor.execute("SELECT * FROM order where email = %s")
+            result = cursor.fetchall()
+            for x in result:
+                print(x[0])
                             
         elif user_input == "7":
             pass  
