@@ -1,5 +1,5 @@
-# Design-Document
-Part 1 of the Final Project in Methods and Tools.
+# Group 27
+This is the repository for Group 27's CSE 2213 group project.
 
 ## Group Information
 Group Number 27
