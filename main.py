@@ -161,8 +161,15 @@ def Screen_Three(user_name):
         elif user_input == "8"
             pass
                             
-        elif user_input == "9"
-            pass
+        elif user_input == "9":
+            user_name = str(input("What is your user name? "))
+            query = "DELETE FROM user WHERE name= %s"
+            data = (user_name,)
+            result = cursor.fetchall()
+            for x in result:
+                print(x[0])
+            print("User deleted")
+            print()
                             
         elif user_input == "10":
             print("Logout Successfull")
