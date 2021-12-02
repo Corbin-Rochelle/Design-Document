@@ -95,7 +95,6 @@ All of these functions, except the constructor, are either getters or setters be
 
 ![Screenshot 2021-12-01 201631](https://user-images.githubusercontent.com/81480295/144345689-34e89bf4-f274-4a02-8910-823c5c5ac2f4.png)
 
-movies()
 - gettitle(): gets the title of the movie
 - getstock(): gets the number of movies
 - getprice(): gets the price of the movies
