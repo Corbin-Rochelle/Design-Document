@@ -4,38 +4,22 @@ import sys
 class Order:
 
 	def __init__(self):
-		self.first_name = ''
-		self.last_name = ''
 		self.email = ''
 		self.contact = ''
 		self.recieving_address = ''
 		self.billing_address = ''
 		self.payment_method = ''
 
-	def getFirstName(self):
-		name = str(input('First name : '))
-		query = 'SELECT first_name FROM order WHERE first_name=%s'
-		data = (self.first_name, )
-		cursor.execute(query,data)
-		return (name)
-
-	def getLastName(self):
-		name = str(input('Last name : '))
-		query = 'SELECT last_name FROM order WHERE last_name=%s'
-		data = (self.last_name, )
-		cursor.execute(query,data)
-		return(name)
-
 	def getEmail(self):
 		mail = str(input('Email : '))
-		query = 'SELECT email FROM order WHERE email=%s'
+		query = 'SELECT email FROM order WHERE name=%s'
 		data = (self.email, )
 		cursor.execute(query,data)
 		return(mail)
 
 	def getContact(self):
 		contact = int(input('Contact Number : '))
-		query = 'SELECT contact FROM order WHERE contact=%s'
+		query = 'SELECT contact FROM order WHERE name=%s'
 		data = (self.contact, )
 		cursor.execute(query,data)
 		return(contact)
@@ -47,7 +31,7 @@ class Order:
 		zip_c = str(input('Zip code : '))
 		country = str(input('Country : '))
 		rec_address = f'{address},{state},{country},{zip_c}'
-		query = 'SELECT recieving_address FROM order WHERE recieving_address=%s'
+		query = 'SELECT recieving_address FROM order WHERE name=%s'
 		data = (self.recieving_address, )
 		cursor.execute(query,data)
 		return(rec_address)
@@ -58,14 +42,14 @@ class Order:
 		zip_c = str(input('Zip code : '))
 		country = str(input('Country : '))
 		bill_address = f'{address},{state},{country},{zip_c}'
-		query = 'SELECT billing_address FROM order WHERE billing_address=%s'
+		query = 'SELECT billing_address FROM order WHERE name=%s'
 		data = (self.billing_address, )
 		cursor.execute(query,data)
 		return(bill_address)
 
 	def getPaymentMethod(self):
 		payment_method = int(input('Payment Method\n1.Credit Card\n2.Debit card\n3.Paypal\nOption : '))
-		query = 'SELECT payment_method FROM order WHERE payment_method=%s'
+		query = 'SELECT payment_method FROM order WHERE name=%s'
 		data = (self.payment_method, )
 		cursor.execute(query,data)
 		if payment_method == 1:
@@ -77,22 +61,6 @@ class Order:
 		elif payment_method == 4:
 			return('Please enter the right option of payment method')
 			getPaymentMethod()
-
-
-	def setFirstName(self,fname):
-		self.first_name = fname
-		query = 'UPDATE order SET fname=%s  WHERE first_name=%s'
-        data = (fname, self.first_name)
-        cursor.execute(query, data)
-        connection.commit()
-		
-
-	def setLastName(self,lname):
-		self.last_name = lname
-		query = "UPDATE order SET lname=%s  WHERE last_name=%s"
-        data = (lname, self.last_name)
-        cursor.execute(query, data)
-        connection.commit()
 
 	def setEmail(self,mail):
 		self.email = mail
@@ -154,8 +122,6 @@ def menu():
 		sign_up()
 	print()
 	order = Order()
-	fname = order.getFirstName()
-	lname = order.getLastName()
 	mail = order.getEmail()
 	contact = order.getContact()
 	if log_status==2:
@@ -167,8 +133,6 @@ def menu():
 			bill_add = rec_add
 		pay_method = order.getPaymentMethod()
 
-	order.setFirstName(fname)
-	order.setLastName(lname)
 	order.setEmail(mail)
 	order.setContact(contact)
 	if log_status==2:
@@ -178,9 +142,9 @@ def menu():
 
 	print('\n\tOrder class attributes :')
 	if log_status==2:
-		print(f'First name : {order.first_name}\nLast name : {order.last_name}\nEmail : {order.email}\nContact Number : {order.contact}\nReceiving Address : {order.recieving_address}\nBilling Address : {order.billing_address}\nPayment Method : {order.payment_method}')
+		print(f'Email : {order.email}\nContact Number : {order.contact}\nReceiving Address : {order.recieving_address}\nBilling Address : {order.billing_address}\nPayment Method : {order.payment_method}')
 	else:
-		print(f'First name : {order.first_name}\nLast name : {order.last_name}\nEmail : {order.email}\nContact Number : {order.contact}')
+		print(f'Email : {order.email}\nContact Number : {order.contact}')
 
 try:
     connection = mysql.connector.connect(
