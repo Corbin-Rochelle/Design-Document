@@ -69,38 +69,7 @@ def Screen_One():
             exit()
 
 
-        # Screen Three
-        elif user_input == "1":
-            answer = str(input("Do you want to see 1) movies or 2) books?"))
-            if answer == "1":
-                cursor.execute("SELECT title FROM movies")
-                result = cursor.fetchall()
-                for x in result:
-                    print(x[0])
-            elif answer == "2":
-                cursor.execute("SELECT title FROM books")
-                result = cursor.fetchall()
-                for x in result:
-                    print(x[0])
-            else:
-                pass
-
-        elif user_input == "2":
-            user_name = str(input("What is your user name? "))
-            query = "SELECT csv FROM shopping_cart WHERE name = %s"
-            data = (user_name,)
-            cursor.execute(query, data)
-            result = cursor.fetchall()
-            for x in result:
-                print(x[0])
-            
-
-        elif user_input == "10":
-            print("Logout Successfull")
-            Main_Menu()
-
-        else:
-            print("Error: Enter a correct option")
+       
 
 def Screen_Two():
     user_name = str(input("Enter username: "))
@@ -141,6 +110,39 @@ def Screen_Three():
     print("(9): Delete your account")
     print("(10): Logout")
     print()
+    
+    # Screen Three
+        elif user_input == "1":
+            answer = str(input("Do you want to see 1) movies or 2) books?"))
+            if answer == "1":
+                cursor.execute("SELECT title FROM movies")
+                result = cursor.fetchall()
+                for x in result:
+                    print(x[0])
+            elif answer == "2":
+                cursor.execute("SELECT title FROM books")
+                result = cursor.fetchall()
+                for x in result:
+                    print(x[0])
+            else:
+                pass
+
+        elif user_input == "2":
+            user_name = str(input("What is your user name? "))
+            query = "SELECT csv FROM shopping_cart WHERE name = %s"
+            data = (user_name,)
+            cursor.execute(query, data)
+            result = cursor.fetchall()
+            for x in result:
+                print(x[0])
+            
+
+        elif user_input == "10":
+            print("Logout Successfull")
+            Main_Menu()
+            
+        else:
+            print("Select a correct option!")
 
 
 print("Hello!, Welcome to the store.")
