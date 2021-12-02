@@ -92,8 +92,6 @@ def Screen_Two():
 
 
 def Screen_Three():
-    print("Enter an integer:")
-    print()
     # Requires a branch, no need to create new function
     print("(1): View all items in movies or books")
 
@@ -110,6 +108,9 @@ def Screen_Three():
     print("(9): Delete your account")
     print("(10): Logout")
     print()
+    
+    user_input = int(intput("Enter an integer: ))
+                            
     
     # Screen Three
         elif user_input == "1":
@@ -135,8 +136,28 @@ def Screen_Three():
             result = cursor.fetchall()
             for x in result:
                 print(x[0])
-            
-
+        
+        elif user_input == "3":
+            pass
+                            
+        elif user_input == "4":
+            pass
+                            
+        elif user_input == "5":
+            pass
+                            
+        elif user_input == "6":
+            pass
+                            
+        elif user_input == "7":
+            pass  
+                            
+        elif user_input == "8"
+            pass
+                            
+        elif user_input == "9"
+            pass
+                            
         elif user_input == "10":
             print("Logout Successfull")
             Main_Menu()
