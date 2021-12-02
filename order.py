@@ -12,15 +12,15 @@ class Order:
 
 	def getEmail(self):
 		mail = str(input('Email : '))
-		query = 'SELECT email FROM order WHERE name=%s'
+		query = 'SELECT email FROM order WHERE email=%s'
 		data = (self.email, )
 		cursor.execute(query,data)
 		return(mail)
 
 	def getContact(self):
 		contact = int(input('Contact Number : '))
-		query = 'SELECT contact FROM order WHERE name=%s'
-		data = (self.contact, )
+		query = 'SELECT contact FROM order WHERE email=%s'
+		data = (self.email, )
 		cursor.execute(query,data)
 		return(contact)
 
@@ -31,8 +31,8 @@ class Order:
 		zip_c = str(input('Zip code : '))
 		country = str(input('Country : '))
 		rec_address = f'{address},{state},{country},{zip_c}'
-		query = 'SELECT recieving_address FROM order WHERE name=%s'
-		data = (self.recieving_address, )
+		query = 'SELECT recieving_address FROM order WHERE email=%s'
+		data = (self.email, )
 		cursor.execute(query,data)
 		return(rec_address)
 
@@ -42,15 +42,15 @@ class Order:
 		zip_c = str(input('Zip code : '))
 		country = str(input('Country : '))
 		bill_address = f'{address},{state},{country},{zip_c}'
-		query = 'SELECT billing_address FROM order WHERE name=%s'
-		data = (self.billing_address, )
+		query = 'SELECT billing_address FROM order WHERE email=%s'
+		data = (self.email, )
 		cursor.execute(query,data)
 		return(bill_address)
 
 	def getPaymentMethod(self):
 		payment_method = int(input('Payment Method\n1.Credit Card\n2.Debit card\n3.Paypal\nOption : '))
-		query = 'SELECT payment_method FROM order WHERE name=%s'
-		data = (self.payment_method, )
+		query = 'SELECT payment_method FROM order WHERE email=%s'
+		data = (self.email, )
 		cursor.execute(query,data)
 		if payment_method == 1:
 			return('Credit Card')
@@ -71,29 +71,29 @@ class Order:
 
 	def setContact(self,contact):
 		self.contact = contact
-		query = "UPDATE order SET contact=%s  WHERE contact=%s"
-        data = (contact, self.contact)
+		query = "UPDATE order SET contact=%s  WHERE email=%s"
+        data = (contact, self.email)
         cursor.execute(query, data)
         connection.commit()
 
 	def setReceivingAddress(self,add):
 		self.recieving_address = add
-		query = "UPDATE order SET add=%s  WHERE recieving_address=%s"
-        data = (add, self.recieveing_address)
+		query = "UPDATE order SET add=%s  WHERE email=%s"
+        data = (add, self.self.email)
         cursor.execute(query, data)
         connection.commit()
 
 	def setBillingAddress(self,add):
 		self.billing_address = add
-		query = "UPDATE order SET add=%s  WHERE billing_address=%s"
-        data = (add, self.billing_address)
+		query = "UPDATE order SET add=%s  WHERE email=%s"
+        data = (add, self.email)
         cursor.execute(query, data)
         connection.commit()
 
 	def setPaymentMethod(self,pay):
 		self.payment_method = pay
-		query = "UPDATE order SET pay=%s  WHERE payment_method=%s"
-        data = (pay, self.payment_method)
+		query = "UPDATE order SET pay=%s  WHERE email=%s"
+        data = (pay, self.email)
         cursor.execute(query, data)
         connection.commit()
 
