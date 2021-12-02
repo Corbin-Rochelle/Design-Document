@@ -57,7 +57,7 @@ All of these functions, except the constructor, are either getters or setters be
 
 ---
 ### Class 3: Order
-<img width="273" alt="Order_UML_Raysita_Maharani" src="https://user-images.githubusercontent.com/85123454/144342008-9955ef4b-1c76-4411-b394-f6b04351c138.PNG">
+<img width="273" alt="Order_Ray" src="https://user-images.githubusercontent.com/85123454/144348629-adb0aad6-be4f-4ec6-bafe-465bfd6ac2fa.PNG">
 
 - Order(): This is the constructor function, which takes the users order.
 - getEmail(): This gets the users email address.
