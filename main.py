@@ -1,26 +1,26 @@
-# import mysql.connector
+import mysql.connector
 import sys
 
 # import order.py
 
 # Connecting to the Database main
-# try:
-#     connection = mysql.connector.connect(
-#         host="localhost",
-#         user="root",
-#         password="password",
-#         database="final_project"
-#     )
+try:
+    connection = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="password",
+        database="final_project"
+    )
 
-#     print("Successful connection.")
+    print("Successful connection.")
 
 
-# except:
-#     print("Failed connection.")
+except:
+    print("Failed connection.")
 
-#     sys.exit()
+    sys.exit()
 
-# cursor = connection.cursor()
+cursor = connection.cursor()
 
 # Calling the menuing
 def Main_Menu():
