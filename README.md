@@ -83,7 +83,7 @@ All of these functions, except the constructor, are either getters or setters be
 
 ---
 ### Class 4: Shopping Cart
-
+ 
 ![ShoppingCartUML](https://user-images.githubusercontent.com/58010076/141879885-4e7d3896-d7c3-4067-be6a-493f3272f4da.PNG)
 
 - ShoppingCart(): This is the constructor functiom, it requires a user to initialize.
@@ -99,7 +99,7 @@ All of these functions, except the constructor, are either getters or setters be
 - getNumItems(): Gets the total number of items in the shopping cart.
 
 ---
-Class 5: Movies
+### Class 5: Movies
 
 ![Screenshot 2021-12-01 201631](https://user-images.githubusercontent.com/81480295/144345689-34e89bf4-f274-4a02-8910-823c5c5ac2f4.png)
 
