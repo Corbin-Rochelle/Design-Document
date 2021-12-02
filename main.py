@@ -69,7 +69,6 @@ def Screen_One():
             exit()
 
 
-       
 
 def Screen_Two():
     user_name = str(input("Enter username: "))
@@ -83,7 +82,7 @@ def Screen_Two():
     if password == result[0][0]:
         print("Success!, logging you in.")
         print()
-        Screen_Three(user_name)
+        Screen_Three()
         return
     # If username/password fails
     else:
@@ -91,32 +90,31 @@ def Screen_Two():
         return
 
 
-def Screen_Three(user_name):
-    
-    shopping_cart = ShoppingCart(user_name)
-    # Requires a branch, no need to create new function
-    print("(1): View all items in movies or books")
+def Screen_Three():
+    while True:
+        print("Enter an integer:")
+        print()
+        # Requires a branch, no need to create new function
+        print("(1): View all items in movies or books")
 
-    print("(2): View all items in your shopping cart")
+        print("(2): View all items in your shopping cart")
 
-    # Requires a branch, no need to create new function
-    print("(3): Add an item from a category to your shopping cart")
+        # Requires a branch, no need to create new function
+        print("(3): Add an item from a category to your shopping cart")
 
-    print("(4): Remove an item from your shopping cart")
-    print("(5): Checkout items currently in your shopping cart")
-    print("(6): View your order history")
-    print("(7): Edit your shipping information")
-    print("(8): Edit your payment information")
-    print("(9): Delete your account")
-    print("(10): Logout")
-    print()
-    
-    user_input = int(intput("Enter an integer: ))
-                            
-    
-    # Screen Three
-        elif user_input == "1":
-            answer = str(input("Do you want to see 1) movies or 2) books?"))
+        print("(4): Remove an item from your shopping cart")
+        print("(5): Checkout items currently in your shopping cart")
+        print("(6): View your order history")
+        print("(7): Edit your shipping information")
+        print("(8): Edit your payment information")
+        print("(9): Delete your account")
+        print("(10): Logout")
+        print()
+        # Screen Three
+
+        user_input = str(input("\nPlease enter a number: ").upper())
+        if user_input == "1":
+            answer = str(input("Do you want to see 1) movies or 2) books? "))
             if answer == "1":
                 cursor.execute("SELECT title FROM movies")
                 result = cursor.fetchall()
@@ -138,50 +136,56 @@ def Screen_Three(user_name):
             result = cursor.fetchall()
             for x in result:
                 print(x[0])
-        
+
         elif user_input == "3":
             item_name = str(input("Enter the name of the item: "))
-            shopping_cart.addToCart(item_name)
-            print("Item added!)
-                            
-        elif user_input == "4":
-            item_name = str(input("Enter the name of the item: "))
-            shopping_cart.removeFromCart(item_name)
-            print("Item removed!")
-                  
-        elif user_input == "5":
-            shopping_cart.checkoutCart
-            print("Checked out!)
-                            
-         elif user_input == "6":
-            print("Your order history: ")
-            cursor.execute("SELECT * FROM order where email = %s")
-            result = cursor.fetchall()
-            for x in result:
-                print(x[0])
-                            
-        elif user_input == "7":
-            pass  
-                            
-        elif user_input == "8"
-            pass
-                            
-        elif user_input == "9":
-            user_name = str(input("What is your user name? "))
-            query = "DELETE FROM user WHERE name= %s"
-            data = (user_name,)
-            result = cursor.fetchall()
-            for x in result:
-                print(x[0])
-            print("User deleted")
-            print()
-                            
-        elif user_input == "10":
-            print("Logout Successfull")
-            Main_Menu()
-            
+            # shopping_cart.addToCart(item_name)
+            print("Item added!")
+
+            if user_input == "4":
+                item_name = str(input("Enter the name of the item: "))
+                # shopping_cart.removeFromCart(item_name)
+                print("Item removed!")
+
+            elif user_input == "5":
+                # shopping_cart.checkoutCart
+                print("Checked out!")
+
+            elif user_input == "6":
+                print("Your order history: ")
+                cursor.execute("SELECT * FROM order where email = %s")
+                result = cursor.fetchall()
+                for x in result:
+                    print(x[0])
+
+            elif user_input == "7":
+                query = "UPDATE order SET recieving_address=%s  WHERE email=%s"
+                data = ("new address", "ctr233",)
+                cursor.execute(query, data)
+                connection.commit()
+
+            elif user_input == "8":
+                query = "UPDATE order SET payment_method=%s  WHERE email=%s"
+                data = ("new address", "ctr233",)
+                cursor.execute(query, data)
+                connection.commit()
+
+            elif user_input == "9":
+                user_name = str(input("What is your user name? "))
+                query = "DELETE FROM user WHERE name= %s"
+                data = (user_name,)
+                result = cursor.fetchall()
+                for x in result:
+                    print(x[0])
+                    print("User deleted")
+                print()
+
+            elif user_input == "10":
+                print("Logout Successfull")
+                Main_Menu()
+
         else:
-            print("Select a correct option!")
+            print("Error: Enter a correct option")
 
 
 print("Hello!, Welcome to the store.")
