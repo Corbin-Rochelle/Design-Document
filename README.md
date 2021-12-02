@@ -16,12 +16,11 @@ Group Member Names/netIDs:
 - Corbin Rochelle 
   - ctr233
 
-List of Classes and Explaination: 
+List of Classes and Explanation: 
 1. Inventory: This is the most simple, yet, neccessary class for an e-commerce store. For our store to function as a store we need to keep track of what we have and some information about each item. 
 2. User: This class will allow user accounts to be created and to view the information associated with them.
 3. Order: This class will takes in the users order information, associate it with the users personal information and where to ship them.
 4. Shopping Cart: This class will handle everything related to a user's shopping cart, such as checking out and totaling the price.
-5.
 
 ## Detailed UML Class diagrams
 
@@ -104,27 +103,6 @@ All of these functions, except the constructor, are either getters or setters be
 - getNumItems(): Gets the total number of items in the shopping cart.
 
 ---
-### Class 5: Admin
-<img width="273" alt="Admin_UML" src="https://user-images.githubusercontent.com/85123454/141925113-5909acdd-93b3-4a1f-9617-ea77f16fd2a2.JPG">
-
-+Admin()  This is the class constructor for Admin class
-+getUsername()  gets the username
-+getFirstName()  gets the admins first name 
-+getLastName()  gets the admins last name
-+getEmail()  gets the admins email
-+getPassword()  gets the admins passowrd
-+getAddress()  gets the admins address
-+getUser(FirstName,LastName,Address,Email)  pulls the first name, last name, email, and address for a user from the user class
-+editInventory()  allows the admin to edit the inventory class
-+setUsername()  sets the admins username
-+setFirstName()  sets the admins first name
-+setLastName()  sets the admins last name
-+setEmail()  sets the admins email
-+setPassword()  sets the admins password
-+setAddress()  sets the admins address
-
-
-
 
 ## Menuing 
 The menuing will be split into three sections: before login, after login but before checkout, and after login during checkout. 
