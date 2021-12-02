@@ -99,8 +99,23 @@ All of these functions, except the constructor, are either getters or setters be
 - getNumItems(): Gets the total number of items in the shopping cart.
 
 ---
+Class 5: Movies
 
-## Menuing 
+![Screenshot 2021-12-01 201631](https://user-images.githubusercontent.com/81480295/144345689-34e89bf4-f274-4a02-8910-823c5c5ac2f4.png)
+
+movies()
+- gettitle(): gets the title of the movie
+- getstock(): gets the number of movies
+- getprice(): gets the price of the movies
+- getshipping_pricel(): gets the shipping price of the movie
+- getreviews(): gets the reviews of the movie
+- settitle(): sets the title of the movie
+- setstock(): sets the number of movies
+- setprice(): sets the price of the movie
+- setshipping_pricel(): sets the shipping price of the movie
+- setreviews(): sets the reviews of the movie
+
+
 The menuing will be split into three sections: before login, after login but before checkout, and after login during checkout. 
 
 ### Before Login [1]
